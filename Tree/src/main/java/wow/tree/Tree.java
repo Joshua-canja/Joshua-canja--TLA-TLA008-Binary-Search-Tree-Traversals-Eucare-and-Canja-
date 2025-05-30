@@ -43,7 +43,11 @@ public class Tree {
                         
                         switch (pili) {
                             case 1:
-                                tree.inorder();
+                            tree.inorder();
+                            if (allowance.isEmpty()) {
+                            System.out.println(" ");
+                            System.out.println("No Allowance added yet.");
+                            System.out.println("-------<>-------");
                                 continue;
 
                             case 2:
@@ -51,14 +55,26 @@ public class Tree {
                                 for (int value : allowance) {
                                     System.out.println(value);
                                 }
+                            if (allowance.isEmpty()) {
+                            System.out.println(" ");
+                            System.out.println("No Allowance added yet.");
+                            System.out.println("-------<>-------");
                                 continue;
 
                             case 3:
-                                tree.preorder();
+                            tree.preorder();
+                            if (allowance.isEmpty()) {
+                            System.out.println(" ");
+                            System.out.println("No Allowance added yet.");
+                            System.out.println("-------<>-------");
                                 continue;
 
                             case 4:
-                                tree.postorder();
+                            tree.postorder();
+                            if (allowance.isEmpty()) {
+                            System.out.println(" ");
+                            System.out.println("No Allowance added yet.");
+                            System.out.println("-------<>-------");
                                 continue;
                                 
                             case 5:
@@ -70,10 +86,6 @@ public class Tree {
 
                         System.out.println(" ");
                         System.out.println(">>>>> List of All Allowance <<<<<");
-                        if (allowance.isEmpty()) {
-                            System.out.println(" ");
-                            System.out.println("No Allowance added yet.");
-                            System.out.println("-------<>-------");
                             continue;
                         }
                         return;
